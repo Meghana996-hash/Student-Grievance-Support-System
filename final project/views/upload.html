@@ -1,0 +1,52 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="up.css">
+
+
+</head>
+
+
+<body>
+
+
+<center>
+
+<div id='upload'>
+<form method="post" action="uploadsucc">
+  
+<h2><u><b>Name of the issue</b></u></h2> <br><br>
+
+<input type="text" name="name" placeholder="enter issue title" maxlength="50" style=" width: 500px;border-style: solid black; background-color:#33FF8A;color: blue" ><br>
+
+<input type='hidden' value='{{user}}' name='username'>
+<br>
+<u><b>Description</b></u><br><br>
+<textarea type="text" rows="10" cols="50" name="comment" placeholder="Enter text here..." style="background-color:gray;color: white " maxlength="950">
+</textarea><br><br>
+
+ 
+<input type="submit" value="upload" style="background-color: #4CAF50;border-style: solid black;"><br><br>
+
+</form>
+</div>
+
+
+<div id='list'>
+
+<h1> Grievances </h1>
+%for i in grs:
+	%if 'name' in i:
+		
+<p><a href='/upvote/{{i['_id']}}/{{user}}'> {{i['name']}} </a> {{i['upvote']}}</p>
+		
+<p>{{i['comment']}}</p>
+	%end
+%end
+
+</div>
+</center>
+
+</body>
+</html>

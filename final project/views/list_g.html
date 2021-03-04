@@ -1,0 +1,18 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+<h1> Grievances </h1>
+%for i in grs:
+	%if 'name' in i:
+		
+<p>{{i['name']}} {{i['upvote']}}</p>
+	%end
+%end
+
+</body>
+
+</html>

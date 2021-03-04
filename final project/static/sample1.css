@@ -1,0 +1,11 @@
+body {
+    background-image: url("http://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-08.jpg");
+}
+@font-face {
+   font-family: sansation;
+   src: url(sansation_light.woff);
+}
+
+body {
+   font-family: sansation;
+}

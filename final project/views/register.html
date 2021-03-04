@@ -1,0 +1,82 @@
+<html>
+
+<head><title> Registration | Grievance Portal</title>
+
+
+<link rel="stylesheet" type="text/css" href="../static/sample1.css">
+
+<link rel="stylesheet" type="text/css" href="../static/register.css">
+
+<link href='https://fonts.googleapis.com/css?family=Sonsie One' rel='stylesheet'>
+
+</head>
+
+
+
+<body>
+
+<div class="header">
+ 
+    <h1>Grievance Portal</h1>
+  <p><q>Your grievance is our grievance</q></p>
+</div>
+
+<div class="row">
+  <div class="column side"></div>
+</div>
+
+ <div class="column middle" >
+<form method="post" action='/regsucc' name="Registration" onsubmit="return(validate());">
+
+<table cellpadding="2" width="50%" align="center"
+cellspacing="4">
+
+<tr>
+<td colspan=2>
+<center><font size=4><b>Register For New Account</b></font></center>
+</td>
+</tr>
+
+<tr>
+<td>User Name :</td>
+<td><input type="text" name="username" placeholder="Enter Your User name" ></td>
+</tr>
+
+
+<tr>
+<td>Name :</td>
+<td><input type="text" name="name" placeholder="Enter Your First name" ></td>
+</tr>
+
+
+<tr>
+<td>Password :</td>
+<td><input type="password" name="password" placeholder="Create Your Password" ></td>
+</tr>
+
+<tr>
+<td>Confirm Password :</td>
+<td><input type="password" name="password" placeholder="Confirm Your Password" ></td>
+</tr>
+
+
+<tr>
+<td><input type="reset"></td>
+
+<td colspan="2"><input type="submit" value="Submit Form" /></td>
+</tr>
+
+</table>
+</form>
+</div>
+
+
+
+<div class="footer">
+  <p>GP</p>
+</div>
+
+
+</body>
+
+</html>
